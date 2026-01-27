@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>アーティスト詳細 - LiveHub</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/music-artist-detail.css">
+</head>
+
+<body>
+  <!-- ナビゲーションバー -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">
+        <i class="bi bi-music-note-beamed"></i> LiveHub
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">ホーム</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="music-festival-list.html">イベント一覧</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="music-artist-list.html">アーティスト</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="music-festival-ticket.html">チケット購入</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="music-festival-myticket.html">マイチケット</a>
+          </li>
+        </ul>
+        <a href="music-login-page.html" class="btn btn-light ms-3 fw-bold">
+          <i class="bi bi-person-circle"></i> ログイン
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ページヘッダー -->
+  <div class="page-header">
+    <div class="container">
+      <h1 class="display-4 fw-bold mb-3">THE ROCKERS</h1>
+      <p class="lead">日本を代表するロックバンド</p>
+      <div class="d-flex gap-2 mb-3 mt-3">
+        <span class="badge genre-badge" style="background-color: #fee2e2; color: #991b1b;">ロック</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- アーティスト情報 -->
+  <div class="container mt-4">
+    <div class="row mb-4">
+      <div class="col-md-3">
+        <img src="https://placehold.co/300x300/ff6b6b/ffffff?text=THE+ROCKERS" class="artist-profile-img"
+          alt="THE ROCKERS">
+      </div>
+      <div class="col-md-9">
+        <div class="artist-info-card">
+          <div class="d-flex gap-3 align-items-center mb-3">
+            <div class="stat-item">
+              <i class="bi bi-people-fill"></i>
+              <strong>250K</strong> フォロワー
+            </div>
+            <div class="stat-item">
+              <i class="bi bi-music-note-list"></i>
+              <strong>120</strong> 楽曲
+            </div>
+            <div class="stat-item">
+              <i class="bi bi-calendar-event"></i>
+              <strong>25</strong> イベント
+            </div>
+          </div>
+          <div class="d-flex gap-2">
+            <button class="btn btn-primary">
+              <i class="bi bi-heart-fill"></i> フォロー
+            </button>
+            <button class="btn btn-outline-primary">
+              <i class="bi bi-share-fill"></i> シェア
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <!-- メインコンテンツ -->
+      <div class="col-lg-8">
+        <!-- About -->
+        <div class="content-card mb-4">
+          <h3 class="fw-bold mb-3">
+            <i class="bi bi-info-circle-fill"></i> プロフィール
+          </h3>
+          <p>
+            THE ROCKERSは2010年に結成された日本のロックバンド。エネルギッシュなライブパフォーマンスと
+            心に響くメッセージ性のある歌詞で、多くのファンを魅了している。デビュー以来、数々のフェスティバルに
+            出演し、メジャーアーティストとしての地位を確立。最新アルバム「Rock Revolution」は
+            オリコンチャート1位を獲得した。
+          </p>
+        </div>
+
+        <!-- 人気曲 -->
+        <div class="content-card mb-4">
+          <h3 class="fw-bold mb-3">
+            <i class="bi bi-fire"></i> 人気曲
+          </h3>
+          <div class="song-list">
+            <div class="song-item">
+              <div class="song-info">
+                <i class="bi bi-play-circle-fill"></i>
+                <div>
+                  <h6 class="mb-0 fw-bold">Revolution</h6>
+                  <small class="text-muted">Rock Revolution (2023)</small>
+                </div>
+              </div>
+              <div class="song-stats">
+                <i class="bi bi-headphones"></i> 2.5M
+              </div>
+            </div>
+            <div class="song-item">
+              <div class="song-info">
+                <i class="bi bi-play-circle-fill"></i>
+                <div>
+                  <h6 class="mb-0 fw-bold">Shining Star</h6>
+                  <small class="text-muted">Best Collection (2022)</small>
+                </div>
+              </div>
+              <div class="song-stats">
+                <i class="bi bi-headphones"></i> 1.8M
+              </div>
+            </div>
+            <div class="song-item">
+              <div class="song-info">
+                <i class="bi bi-play-circle-fill"></i>
+                <div>
+                  <h6 class="mb-0 fw-bold">Never Give Up</h6>
+                  <small class="text-muted">Rock Revolution (2023)</small>
+                </div>
+              </div>
+              <div class="song-stats">
+                <i class="bi bi-headphones"></i> 1.5M
+              </div>
+            </div>
+            <div class="song-item">
+              <div class="song-info">
+                <i class="bi bi-play-circle-fill"></i>
+                <div>
+                  <h6 class="mb-0 fw-bold">Dream On</h6>
+                  <small class="text-muted">First Album (2015)</small>
+                </div>
+              </div>
+              <div class="song-stats">
+                <i class="bi bi-headphones"></i> 1.2M
+              </div>
+            </div>
+            <div class="song-item">
+              <div class="song-info">
+                <i class="bi bi-play-circle-fill"></i>
+                <div>
+                  <h6 class="mb-0 fw-bold">Thunder Road</h6>
+                  <small class="text-muted">Best Collection (2022)</small>
+                </div>
+              </div>
+              <div class="song-stats">
+                <i class="bi bi-headphones"></i> 980K
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 今後のイベント -->
+        <div class="content-card mb-4">
+          <h3 class="fw-bold mb-3">
+            <i class="bi bi-calendar-event-fill"></i> 今後のイベント
+          </h3>
+          <div class="event-list">
+            <div class="event-item">
+              <div class="event-date">
+                <div class="date-month">3月</div>
+                <div class="date-day">15</div>
+              </div>
+              <div class="event-info">
+                <h5 class="fw-bold mb-1">Rock Festival 2024</h5>
+                <p class="mb-1"><i class="bi bi-geo-alt-fill"></i> 東京ドーム</p>
+                <small class="text-muted">19:00開演</small>
+              </div>
+              <a href="music-festival-detail.html" class="btn btn-outline-primary">詳細</a>
+            </div>
+            <div class="event-item">
+              <div class="event-date">
+                <div class="date-month">4月</div>
+                <div class="date-day">20</div>
+              </div>
+              <div class="event-info">
+                <h5 class="fw-bold mb-1">Summer Music Wave</h5>
+                <p class="mb-1"><i class="bi bi-geo-alt-fill"></i> 大阪城ホール</p>
+                <small class="text-muted">18:30開演</small>
+              </div>
+              <a href="music-festival-detail.html" class="btn btn-outline-primary">詳細</a>
+            </div>
+            <div class="event-item">
+              <div class="event-date">
+                <div class="date-month">5月</div>
+                <div class="date-day">10</div>
+              </div>
+              <div class="event-info">
+                <h5 class="fw-bold mb-1">Urban Music Fest</h5>
+                <p class="mb-1"><i class="bi bi-geo-alt-fill"></i> さいたまスーパーアリーナ</p>
+                <small class="text-muted">17:00開演</small>
+              </div>
+              <a href="music-festival-detail.html" class="btn btn-outline-primary">詳細</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- サイドバー -->
+      <div class="col-lg-4">
+        <!-- SNS -->
+        <div class="content-card mb-4">
+          <h5 class="fw-bold mb-3">
+            <i class="bi bi-link-45deg"></i> SNS
+          </h5>
+          <div class="d-grid gap-2">
+            <a href="#" class="btn btn-outline-primary">
+              <i class="bi bi-instagram"></i> Instagram
+            </a>
+            <a href="#" class="btn btn-outline-primary">
+              <i class="bi bi-twitter"></i> Twitter
+            </a>
+            <a href="#" class="btn btn-outline-primary">
+              <i class="bi bi-youtube"></i> YouTube
+            </a>
+            <a href="#" class="btn btn-outline-primary">
+              <i class="bi bi-spotify"></i> Spotify
+            </a>
+          </div>
+        </div>
+
+        <!-- 関連アーティスト -->
+        <div class="content-card mb-4">
+          <h5 class="fw-bold mb-3">
+            <i class="bi bi-people-fill"></i> 関連アーティスト
+          </h5>
+          <div class="related-artist-list">
+            <div class="related-artist-item">
+              <img src="https://placehold.co/50x50/4ecdc4/ffffff?text=DJ" class="related-artist-img" alt="DJ WAVE">
+              <div class="related-artist-info">
+                <h6 class="mb-0 fw-bold">DJ WAVE</h6>
+                <small class="text-muted">EDM</small>
+              </div>
+            </div>
+            <div class="related-artist-item">
+              <img src="https://placehold.co/50x50/ffe66d/333333?text=JAZZ" class="related-artist-img"
+                alt="JAZZ QUINTET">
+              <div class="related-artist-info">
+                <h6 class="mb-0 fw-bold">JAZZ QUINTET</h6>
+                <small class="text-muted">ジャズ</small>
+              </div>
+            </div>
+            <div class="related-artist-item">
+              <img src="https://placehold.co/50x50/ec4899/ffffff?text=POP" class="related-artist-img" alt="POP STARS">
+              <div class="related-artist-info">
+                <h6 class="mb-0 fw-bold">POP STARS</h6>
+                <small class="text-muted">ポップ</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- フッター -->
+  <footer class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5 class="fw-bold mb-3"><i class="bi bi-music-note-beamed"></i> LiveHub</h5>
+          <p class="text-light">音楽で繋がる、最高の体験をあなたに。</p>
+        </div>
+        <div class="col-md-2 mb-3">
+          <h6 class="fw-bold mb-3">サイト情報</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light text-decoration-none">About</a></li>
+            <li><a href="#" class="text-light text-decoration-none">利用規約</a></li>
+            <li><a href="#" class="text-light text-decoration-none">プライバシー</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-3">
+          <h6 class="fw-bold mb-3">サポート</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light text-decoration-none">ヘルプ</a></li>
+            <li><a href="#" class="text-light text-decoration-none">お問い合わせ</a></li>
+            <li><a href="#" class="text-light text-decoration-none">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h6 class="fw-bold mb-3">フォローする</h6>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-light"><i class="bi bi-twitter fs-4"></i></a>
+            <a href="#" class="text-light"><i class="bi bi-instagram fs-4"></i></a>
+            <a href="#" class="text-light"><i class="bi bi-youtube fs-4"></i></a>
+            <a href="#" class="text-light"><i class="bi bi-spotify fs-4"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-light">
+      <p class="text-center text-light mb-0">&copy; 2024 LiveHub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
