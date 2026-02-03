@@ -97,33 +97,8 @@ body {
 .event-item:hover {
   background: #e9ecef;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-
-/* 曲リストと関連アーティスト - 残す必要がある部分のみ */
-.song-list,
-.event-list {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
 }
 
-.song-item,
-.event-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px;
-  border: 1px solid #e5e7eb;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-}
-
-.song-item:hover,
-.event-item:hover {
-  background: #f9fafb;
-  border-color: var(--primary-color);
-}
-
-.song-info,
 .event-info {
   display: flex;
   gap: 15px;
